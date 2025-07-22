@@ -8,5 +8,9 @@ public class GameRunner {
 	public void run() {
 		// TODO Auto-generated method stub
 		System.out.println("Running game: " + game);
+		game.down();
+		game.up();
+		game.right();
+		game.left();
 	}
 }
