@@ -1,7 +1,7 @@
 package com.devX.firstSprintProject.game;
 
 public class GameRunner {
-	MarioGame game;
+	private MarioGame game;
 	public GameRunner(MarioGame game) {
 		this.game = game;
 	}
