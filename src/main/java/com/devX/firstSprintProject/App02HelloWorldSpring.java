@@ -1,11 +1,12 @@
 package com.devX.firstSprintProject;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class App02HelloWorldSpring {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		// 1: Launch a Sprint Context
 		var context = 
@@ -23,6 +24,11 @@ public class App02HelloWorldSpring {
 		System.out.println(context.getBean("person3Parameters"));
 		System.out.println(context.getBean("getAddress")); // Retrieving bean which has a custom name, set under @Beans annotation
 		System.out.println(context.getBean(Address.class)); // Retrieving Address class from HelloWorldConfiguration
+		
+		//Functional Programming
+		//Getting names of all the beans 
+		Arrays.stream(context.getBeanDefinitionNames())
+			.forEach(System.out::println);
 		
 	}
 }
