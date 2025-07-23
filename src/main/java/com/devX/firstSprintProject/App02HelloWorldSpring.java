@@ -30,5 +30,9 @@ public class App02HelloWorldSpring {
 		Arrays.stream(context.getBeanDefinitionNames())
 			.forEach(System.out::println);
 		
+		// This will result in an Exception as there are more than one bean of type Person
+		// To resolve this any one bean of Person type should be set as primary using @Primary Annotation
+		System.out.println(context.getBean(Person.class));
+		
 	}
 }

@@ -2,6 +2,7 @@ package com.devX.firstSprintProject;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 //Record is released in JDK 16
 record Person (String name, int age, Address address) {};
@@ -21,7 +22,8 @@ public class HelloWorldConfiguration {
 		return 21;
 	}
 	
-	@Bean 
+	@Bean
+	@Primary
 	public Person person() {
 		return new Person("Ravi",21, new Address("Mihan", "Nagpur"));
 	}
