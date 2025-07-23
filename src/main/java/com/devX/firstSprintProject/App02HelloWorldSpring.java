@@ -7,9 +7,17 @@ public class App02HelloWorldSpring {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		// 1: Launch a Sprint Context
 		var context = 
 				new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
-		System.out.println(context);
- 
+		
+		// 2: Configure the things that we want Spring to manage - 
+		// HelloWorldConfiguration - @Configuration
+		// name - @Bean
+		
+		// 3: Retrieving Beans managed By Spring
+		System.out.println(context.getBean("name"));
+		System.out.println(context.getBean("age"));
+		
 	}
 }
