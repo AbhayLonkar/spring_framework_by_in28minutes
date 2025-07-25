@@ -1,4 +1,4 @@
-package com.devX.firstSprintProject;
+package com.devX.firstSprintProject.HelloWorld;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

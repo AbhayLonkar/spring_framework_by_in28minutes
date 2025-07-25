@@ -1,4 +1,4 @@
-package com.devX.firstSprintProject;
+package com.devX.firstSprintProject.HelloWorld;
 
 import java.util.Arrays;
 
